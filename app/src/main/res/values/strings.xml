@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">Chores App</string>
+    
+    <!-- Common -->
+    <string name="select_user">Select User</string>
+    <string name="enter_pin">Enter PIN</string>
+    <string name="cancel">Cancel</string>
+    <string name="confirm">Confirm</string>
+    <string name="ok">OK</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    
+    <!-- Child Interface -->
+    <string name="available_chores">Available Chores</string>
+    <string name="my_chores">My Chores</string>
+    <string name="my_earnings">My Earnings</string>
+    <string name="earned_label">Earned:</string>
+    <string name="start_chore">Start Chore</string>
+    <string name="take_picture">Take Picture</string>
+    <string name="complete_chore">Complete Chore</string>
+    <string name="chore_in_progress">In Progress</string>
+    <string name="pending_approval">Pending Approval</string>
+    <string name="approved">Approved</string>
+    <string name="rejected">Rejected</string>
+    
+    <!-- Parent Interface -->
+    <string name="parent_dashboard">Parent Dashboard</string>
+    <string name="review_chores">Review Chores</string>
+    <string name="manage_chores">Manage Chores</string>
+    <string name="children_overview">Children Overview</string>
+    <string name="pending_reviews">Pending Reviews</string>
+    <string name="approve">Approve</string>
+    <string name="reject">Reject</string>
+    <string name="pay_out">Pay Out</string>
+    <string name="reset_balance">Reset Balance</string>
+    <string name="add_chore">Add Chore</string>
+    <string name="edit_chore">Edit Chore</string>
+    <string name="delete_chore">Delete Chore</string>
+    
+    <!-- Messages -->
+    <string name="chore_started">Chore started!</string>
+    <string name="picture_saved">Picture saved!</string>
+    <string name="chore_completed">Chore completed! Waiting for approval.</string>
+    <string name="chore_approved">Chore approved!</string>
+    <string name="chore_rejected">Chore rejected. Please try again.</string>
+    <string name="balance_reset">Balance has been reset to $0.00</string>
+    <string name="incorrect_pin">Incorrect PIN. Please try again.</string>
+    <string name="camera_permission_required">Camera permission is required to take pictures</string>
+    
+    <!-- Formatting -->
+    <string name="reward_format">$%.2f</string>
+    <string name="balance_format">Balance: $%.2f</string>
+</resources>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/userSelectionFragment">
+
+    <fragment
+        android:id="@+id/userSelectionFragment"
+        android:name="com.family.choresapp.ui.common.UserSelectionFragment"
+        android:label="Select User">
+        <action
+            android:id="@+id/action_userSelection_to_childHome"
+            app:destination="@id/childHomeFragment" />
+        <action
+            android:id="@+id/action_userSelection_to_parentPin"
+            app:destination="@id/parentPinFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/parentPinFragment"
+        android:name="com.family.choresapp.ui.common.ParentPinFragment"
+        android:label="Enter PIN">
+        <action
+            android:id="@+id/action_parentPin_to_parentDashboard"
+            app:destination="@id/parentDashboardFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/childHomeFragment"
+        android:name="com.family.choresapp.ui.child.ChildHomeFragment"
+        android:label="Chores">
+        <argument
+            android:name="userId"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_childHome_to_choreDetail"
+            app:destination="@id/choreDetailFragment" />
+        <action
+            android:id="@+id/action_childHome_to_earnings"
+            app:destination="@id/earningsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/choreDetailFragment"
+        android:name="com.family.choresapp.ui.child.ChoreDetailFragment"
+        android:label="Chore Details">
+        <argument
+            android:name="choreId"
+            app:argType="integer" />
+        <argument
+            android:name="childId"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_choreDetail_to_camera"
+            app:destination="@id/cameraFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/cameraFragment"
+        android:name="com.family.choresapp.ui.common.CameraFragment"
+        android:label="Take Picture">
+        <argument
+            android:name="completionId"
+            app:argType="integer" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/earningsFragment"
+        android:name="com.family.choresapp.ui.child.EarningsFragment"
+        android:label="My Earnings">
+        <argument
+            android:name="childId"
+            app:argType="integer" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/parentDashboardFragment"
+        android:name="com.family.choresapp.ui.parent.ParentDashboardFragment"
+        android:label="Parent Dashboard">
+        <action
+            android:id="@+id/action_parentDashboard_to_reviewChores"
+            app:destination="@id/reviewChoresFragment" />
+        <action
+            android:id="@+id/action_parentDashboard_to_manageChores"
+            app:destination="@id/manageChoresFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/reviewChoresFragment"
+        android:name="com.family.choresapp.ui.parent.ReviewChoresFragment"
+        android:label="Review Chores" />
+
+    <fragment
+        android:id="@+id/manageChoresFragment"
+        android:name="com.family.choresapp.ui.parent.ManageChoresFragment"
+        android:label="Manage Chores" />
+
+</navigation>
